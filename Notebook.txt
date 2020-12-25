@@ -1,0 +1,77 @@
+# Section 1:
+
+* Mix is command line tool of elixir:
+ - Mix > Create Project > Compile Project > Task > Manage Dependencies
+ > mix new cards
+
+* Module is a collection of functions.
+
+* Executing project in iex:
+  > iex -S mix
+
+* Parathesis is not needed.
+* Elixir follow "implicit return" whatever is the last line of function will become return
+
+* To recompile the code after making change command:
+ > recompile
+
+* Creating a method which returns a boolean use "?" Question mark
+ > def is_afzal_sleepy?(args) do .. end
+
+* List in Elixir are basically Linked List (Mutable)
+
+* Pattern Matching is basically Elixir method of variable assignment.
+* It only works with same data type: for example:
+ > tuple = tuple
+ > list = list
+
+# Section 2:
+
+* In case of 'if' statement:
+  - 'case' statement is used to perform conditional operations
+  - 'case' statement neccessity is to have ':atom' in front.
+
+* Atoms are used throughout code to do status control
+* Atoms are just like strings only difference is 
+ - string are used to put together some info
+ - atom on other hand are binary functionality but look like string.
+
+* Variable not to care about put '_' in front:
+* For example:
+ - _not_care_variable
+
+
+# Section 3: 
+* Writing documentation with Elixir using ":ex_doc"
+* There are 2 documentation:
+  1. @moduledoc 2. @doc
+* Command to create a doc:
+ > mix docs
+
+* Testing:
+ - Two type of testing:
+  1. Normal testing the functionality 
+  2. Doc Testing
+  - Doc Testing: it is the testing for the example
+        mentioned in the Documentation.
+
+* Opposite of "assert" is "refute"
+
+* The ultimate question for testing: What do I write test cases for?
+  - Answer: Well, what be
+  
+# Section 4:
+* Maps module: https://hexdocs.pm/elixir/Map.html
+* To update: 
+   > Map.put(old_map, :key, "new_value")
+   > or
+   > %{old_map | old_key: "new_value"}
+
+ * Keyword list:
+   - [color1: "red", color2: blue]
+* Keyword list can have multiple keys with same name.
+* while Map will over write the same keys
+
+* Struct:
+ - Strict maps, it will accept a property which is present in it.
+ > %Identicon.Image{}
